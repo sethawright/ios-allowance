@@ -18,6 +18,8 @@
 		49ECFB81297433BD00414558 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49ECFB80297433BD00414558 /* DataController.swift */; };
 		49ECFB8929744A7200414558 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49ECFB8829744A7200414558 /* HomeView.swift */; };
 		49ECFB8B29744ADF00414558 /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49ECFB8A29744ADF00414558 /* ProjectsView.swift */; };
+		49ECFB8F297451F900414558 /* Item-CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49ECFB8E297451F900414558 /* Item-CoreDataHelper.swift */; };
+		49ECFB912974523000414558 /* Project-CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49ECFB902974523000414558 /* Project-CoreDataHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		49ECFB842974471200414558 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		49ECFB8829744A7200414558 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		49ECFB8A29744ADF00414558 /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
+		49ECFB8E297451F900414558 /* Item-CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item-CoreDataHelper.swift"; sourceTree = "<group>"; };
+		49ECFB902974523000414558 /* Project-CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project-CoreDataHelper.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,8 +113,9 @@
 				49ECFB53297430ED00414558 /* AllowanceApp.swift */,
 				49ECFB7D2974316800414558 /* Main.xcdatamodeld */,
 				49ECFB57297430ED00414558 /* Assets.xcassets */,
-				49ECFB8629744A0500414558 /* Controllers */,
+				49ECFB8629744A0500414558 /* Controller */,
 				49ECFB8C29744E9900414558 /* Model */,
+				49ECFB8D297451A500414558 /* Helper */,
 				49ECFB8729744A3F00414558 /* View */,
 				49ECFB59297430ED00414558 /* Preview Content */,
 			);
@@ -150,12 +155,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		49ECFB8629744A0500414558 /* Controllers */ = {
+		49ECFB8629744A0500414558 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				49ECFB80297433BD00414558 /* DataController.swift */,
 			);
-			path = Controllers;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		49ECFB8729744A3F00414558 /* View */ = {
@@ -173,6 +178,15 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		49ECFB8D297451A500414558 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				49ECFB8E297451F900414558 /* Item-CoreDataHelper.swift */,
+				49ECFB902974523000414558 /* Project-CoreDataHelper.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,9 +321,11 @@
 			files = (
 				49ECFB8B29744ADF00414558 /* ProjectsView.swift in Sources */,
 				49ECFB7F2974316800414558 /* Main.xcdatamodeld in Sources */,
+				49ECFB8F297451F900414558 /* Item-CoreDataHelper.swift in Sources */,
 				49ECFB81297433BD00414558 /* DataController.swift in Sources */,
 				49ECFB56297430ED00414558 /* ContentView.swift in Sources */,
 				49ECFB8929744A7200414558 /* HomeView.swift in Sources */,
+				49ECFB912974523000414558 /* Project-CoreDataHelper.swift in Sources */,
 				49ECFB54297430ED00414558 /* AllowanceApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
