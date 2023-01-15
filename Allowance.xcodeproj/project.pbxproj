@@ -14,6 +14,8 @@
 		49ECFB65297430EE00414558 /* AllowanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49ECFB64297430EE00414558 /* AllowanceTests.swift */; };
 		49ECFB6F297430EE00414558 /* AllowanceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49ECFB6E297430EE00414558 /* AllowanceUITests.swift */; };
 		49ECFB71297430EE00414558 /* AllowanceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49ECFB70297430EE00414558 /* AllowanceUITestsLaunchTests.swift */; };
+		49ECFB7F2974316800414558 /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 49ECFB7D2974316800414558 /* Main.xcdatamodeld */; };
+		49ECFB81297433BD00414558 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49ECFB80297433BD00414558 /* DataController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,10 @@
 		49ECFB6A297430EE00414558 /* AllowanceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AllowanceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		49ECFB6E297430EE00414558 /* AllowanceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllowanceUITests.swift; sourceTree = "<group>"; };
 		49ECFB70297430EE00414558 /* AllowanceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllowanceUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		49ECFB7E2974316800414558 /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
+		49ECFB80297433BD00414558 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		49ECFB82297446FF00414558 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		49ECFB842974471200414558 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +84,7 @@
 				49ECFB63297430EE00414558 /* AllowanceTests */,
 				49ECFB6D297430EE00414558 /* AllowanceUITests */,
 				49ECFB51297430ED00414558 /* Products */,
+				49ECFB832974471200414558 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,7 +101,10 @@
 		49ECFB52297430ED00414558 /* Allowance */ = {
 			isa = PBXGroup;
 			children = (
+				49ECFB82297446FF00414558 /* Info.plist */,
 				49ECFB53297430ED00414558 /* AllowanceApp.swift */,
+				49ECFB7D2974316800414558 /* Main.xcdatamodeld */,
+				49ECFB80297433BD00414558 /* DataController.swift */,
 				49ECFB55297430ED00414558 /* ContentView.swift */,
 				49ECFB57297430ED00414558 /* Assets.xcassets */,
 				49ECFB59297430ED00414558 /* Preview Content */,
@@ -125,6 +135,14 @@
 				49ECFB70297430EE00414558 /* AllowanceUITestsLaunchTests.swift */,
 			);
 			path = AllowanceUITests;
+			sourceTree = "<group>";
+		};
+		49ECFB832974471200414558 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49ECFB842974471200414558 /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +275,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49ECFB7F2974316800414558 /* Main.xcdatamodeld in Sources */,
+				49ECFB81297433BD00414558 /* DataController.swift in Sources */,
 				49ECFB56297430ED00414558 /* ContentView.swift in Sources */,
 				49ECFB54297430ED00414558 /* AllowanceApp.swift in Sources */,
 			);
@@ -420,6 +440,7 @@
 				DEVELOPMENT_TEAM = 39LR262F5K;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Allowance/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +470,7 @@
 				DEVELOPMENT_TEAM = 39LR262F5K;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Allowance/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -583,6 +605,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		49ECFB7D2974316800414558 /* Main.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				49ECFB7E2974316800414558 /* Main.xcdatamodel */,
+			);
+			currentVersion = 49ECFB7E2974316800414558 /* Main.xcdatamodel */;
+			path = Main.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 49ECFB48297430ED00414558 /* Project object */;
 }
